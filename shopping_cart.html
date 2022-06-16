@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <link rel="stylesheet" href="style.css">
+  <script src="shopping_cart.js"></script>
+<title>AdventureMart</title>
+</head>
+<body>
+<h1>Welcome Adventures!!!</h1>
+<i class="fa fa-chevron-circle-up"></i>
+<a href="https://roll20.net">Adventure Gear</a>
+<script type="application/processing">
+
+</script>
+<section id="customer-cart">
+<div>
+  <h2 id="cart-header">Cart</h2>
+<!-- TODO: Get a up chevron asset -->
+<!-- TODO: Get a down chevron -->
+</div>
+<div id="customer-cart-display">
+  <h3>Your Items: </h3>
+  <div id="cart-item-display"></div>
+  <p>Your Total: <span id="customer-total">0</span></p>
+</div>
+</section>
+<section id="shop-wares">
+  <div class="card-container">
+    <h4>health potion</h4>
+    <img src="./assets/health_potion.jpeg" alt="health potion" class="product-image" />
+    <div>
+      <p>Standard health potion. will restore a small amount of health.</p>
+      <p>Price: <span>2 silver</span></p>
+      <p>Quantity: <span>5</span></p>
+    </div>
+    <div class="warning-container">
+      <p id="health-potion-success-label" class="hidden success-label">Added <span id="health-potion-sucess"></span> items to your cart.</p>
+      <p id="health-potions-warning-label"  class="hidden warning-label"> Unable to add selected amount.</p>
+    </div>
+    <footer class="shop-item-footer">
+      <p>Qty: </p>
+      <input class="shop-item-qty" name="qty" value=0 type="number" id="healthPotionInput" />
+      <i class="fa fa-chevron-circle-down"></i>
+    </footer>
+  </div>
+<div class="card-container"> 
+    <h3>brass knuckles</h3>
+    <img src="./assets/brass_knuckles.jpeg" alt="brass knuckles" class="product-image" />
+    <div>
+      <p>Steel Plated Brass Knuckles. Adds +5 to bludgeoning</p>
+      <p>Price: <span> 1 gold</span></p>
+      <p>Quantity: <span>10</span></p>
+      <input type="number" id="steelPlatedBrassKnucklesInput" />
+    </div>
+</div>
+<div class="card-container"> 
+  <h3>dagger</h3>
+  <img src="./assets/dagger.jpeg" alt="Dagger" class="product-image" />
+  <div>
+    <p>Basic Dagger. Adds +5 to piercing damage</p>
+    <p>Price: <span> 1 gold</span></p>
+    <p>Quantity: <span>10</span></p>
+    <input type="number" id="basicDaggerInput" />
+  </div>
+</div>
+</div>
+</section>
+
+</body>
+</html>
+</head>

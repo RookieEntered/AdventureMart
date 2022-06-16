@@ -1,0 +1,94 @@
+body {
+  background-color: #ffff66;
+}
+
+#customer-cart {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 2%;
+  padding: 2px;
+}
+
+#shop-wares {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-to-bag {
+  background-color: white;
+  color: black;
+}
+
+.add-to-bag:hover {
+  background-color: #ffff66;
+  box-shadow: 2px 2px 2px slategray;
+  color: #00563b;
+}
+
+.cart-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+.icon {
+  font-size: 25px;
+  height: 25px;
+  width: min-content;
+}
+
+.page-header {
+  text-decoration: underline #00563b;
+}
+
+.shop-item-card {
+  border: 2px solid black;
+  border-radius: 2%;
+  background-color: white;
+  padding: 24px;
+  height: min-content;
+  overflow: auto;
+}
+
+.shop-item-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.shop-item-image {
+  float: left;
+  height: 75px;
+  margin: 10px;
+  width: 75px;
+}
+
+.shop-item-info {
+  margin-left: 20px;
+}
+
+.shop-item-qty {
+  width: 35px;
+}
+
+.success-label {
+  color: #00563b;
+  position: absolute;
+  top: -20px;
+}
+
+.warning-container {
+  position: relative;
+}
+
+.warning-label {
+  color: red;
+  position: absolute;
+  top: -20px;
+}
